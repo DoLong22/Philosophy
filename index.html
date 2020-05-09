@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Philosophy</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/fontawesome.css/all.min.css">
 
     <link rel="stylesheet" href="./css/style/style.css">
     <link rel="stylesheet" href="./css//style/base.css">
+
+    <script src="./js/jquery.js/jquery.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
     <script src="./js/fontawesome.js/all.min.js"></script>
+    <script src="./js/main.js"></script>
     <link rel="icon" href="./img/favicon.ico">
 </head>
 
@@ -118,248 +124,285 @@
 
     <body>
         <section class="content">
-            <div class="row recommend">
-                <article class="recommend__content">
-                    <div class="recommend__pic">
-                        <a href="">
-                            <img src="./img/400/lamp-400.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="recommend__description">
-                        <div class="recommend__description-summary">
-                            <p class="summary__date">December 15, 2017</p>
-                            <div class="summary__title"></div>
+            <div class="row masonry-wrap recommend">
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__pic">
+                            <a href="">
+                                <img src="./img/400/lamp-400.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="recommend__description-detail">
-                            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
-                                proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
-                                incididunt velit sint in aliqua...</p>
-                        </div>
-                        <div class="recommend__description-more">
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="recommend__content">
-                    <div class="recommend__pic">
-                        <a href="">
-                            <img src="./img/400/lamp-400.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="recommend__description">
-                        <div class="recommend__description-summary">
-                            <p class="summary__date">December 15, 2017</p>
-                            <div class="summary__title"></div>
-                        </div>
-                        <div class="recommend__description-detail">
-                            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
-                                proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
-                                incididunt velit sint in aliqua...</p>
-                        </div>
-                        <div class="recommend__description-more">
-                            <a href=""></a>
-                            <a href=""></a>
+                        <div class="recommend__description">
+                            <div class="recommend__description-summary">
+                                <p class="summary__date">December 15, 2017</p>
+                                <h1 class="summary__title"><a href="">Just a Standard Format Post.</a></h1>
+                            </div>
+                            <div class="recommend__description-detail">
+                                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
+                                    proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
+                                    incididunt velit sint in aliqua...</p>
+                            </div>
+                            <div class="recommend__description-more">
+                                <a href="">Design</a>
+                                <a href="">Photography</a>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article class="recommend__content">
-                    <div class="recommend__pic">
-                        <a href="">
-                            <img src="./img/400/lamp-400.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="recommend__description">
-                        <div class="recommend__description-summary">
-                            <p class="summary__date">December 15, 2017</p>
-                            <div class="summary__title"></div>
-                        </div>
-                        <div class="recommend__description-detail">
-                            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
-                                proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
-                                incididunt velit sint in aliqua...</p>
-                        </div>
-                        <div class="recommend__description-more">
-                            <a href=""></a>
-                            <a href=""></a>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__description">
+                            <div class="recommend__description-detail">
+                                <blockquote>
+                                    <p>Good design is making something intelligible and memorable. Great design is making
+                                        something memorable and meaningful.
+                                    </p>
+                                    <cite>Dieter Rams</cite>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article class="recommend__content">
-                    <div class="recommend__pic">
-                        <a href="">
-                            <img src="./img/400/lamp-400.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="recommend__description">
-                        <div class="recommend__description-summary">
-                            <p class="summary__date">December 15, 2017</p>
-                            <div class="summary__title"></div>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__pic">
+                            <a href="">
+                                <img src="./img/400/tulips-400.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="recommend__description-detail">
-                            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
-                                proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
-                                incididunt velit sint in aliqua...</p>
+                        <div class="recommend__description">
+                            <div class="recommend__description-summary">
+                                <p class="summary__date">December 15, 2017</p>
+                                <h1 class="summary__title"><a href="">10 Interesting Facts About Caffeine.</a></h1>
+                            </div>
+                            <div class="recommend__description-detail">
+                                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
+                                    proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
+                                    incididunt velit sint in aliqua...</p>
+                            </div>
+                            <div class="recommend__description-more">
+                                <a href="">Health</a>
+                            </div>
                         </div>
-                        <div class="recommend__description-more">
-                            <a href=""></a>
-                            <a href=""></a>
+                </article>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__pic">
+                            <a href="">
+                                <img src="./img/400/cookies-400.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="recommend__description">
+                            <div class="recommend__description-summary">
+                                <p class="summary__date">December 10, 2017</p>
+                                <h1 class="summary__title"><a href="">No Sugar Oatmeal Cookies.</a></h1>
+                            </div>
+                            <div class="recommend__description-detail">
+                                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
+                                    proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
+                                    incididunt velit sint in aliqua...</p>
+                            </div>
+                            <div class="recommend__description-more">
+                                <a href="">Cooking</a>
+                                <a href="">Health</a>
+                            </div>
+                        </div>
+                </article>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__pic">
+                            <a href="">
+                                <img src="./img/400/wheel-400.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="recommend__description">
+                            <div class="recommend__description-summary">
+                                <p class="summary__date">December 10, 2017</p>
+                                <h1 class="summary__title"><a href="">Visiting Theme Parks Improves Your Health.</a></h1>
+                            </div>
+                            <div class="recommend__description-detail">
+                                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
+                                    proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
+                                    incididunt velit sint in aliqua...</p>
+                            </div>
+                            <div class="recommend__description-more">
+                                <a href="">Health</a>
+                                <a href="">Lifestyle</a>
+                            </div>
+                        </div>
+                </article>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__pic">
+                            <a href="">
+                                <img src="./img/400/gallery-1-400.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="recommend__description">
+                            <div class="recommend__description-summary">
+                                <p class="summary__date">December 10, 2017</p>
+                                <h1 class="summary__title"><a href="">Workspace Design Trends and Ideas.</a></h1>
+                            </div>
+                            <div class="recommend__description-detail">
+                                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
+                                    proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
+                                    incididunt velit sint in aliqua...</p>
+                            </div>
+                            <div class="recommend__description-more">
+                                <a href="">Design</a>
+                                <a href="">Photography</a>
+                            </div>
+                        </div>
+                </article>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__pic">
+                            <a href="https://player.vimeo.com/video/117310401?color=01aef0&title=0&byline=0&portrait=0">
+                                <img src="./img/400/shutterbug-400.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="recommend__description">
+                            <div class="recommend__description-summary">
+                                <p class="summary__date">December 15, 2017</p>
+                                <h1 class="summary__title"><a href="">Key Benefits Of Family Photography.</a></h1>
+                            </div>
+                            <div class="recommend__description-detail">
+                                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
+                                    proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
+                                    incididunt velit sint in aliqua...</p>
+                            </div>
+                            <div class="recommend__description-more">
+                                <a href="">Family</a>
+                                <a href="">Photography</a>
+                            </div>
+                        </div>
+                </article>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__pic">
+                            <a href="">
+                                <img src="./img/400/guitarman-400.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="recommend__description">
+                            <div class="recommend__description-summary">
+                                <p class="summary__date">December 15, 2017</p>
+                                <h1 class="summary__title"><a href="">What Your Music Preference Says About You and Your Personality.</a></h1>
+                            </div>
+                            <div class="recommend__description-detail">
+                                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
+                                    proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
+                                    incididunt velit sint in aliqua...</p>
+                            </div>
+                            <div class="recommend__description-more">
+                                <a href="">Design</a>
+                                <a href="">Photography</a>
+                            </div>
+                        </div>
+                </article>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__description">
+                            <div class="recommend__description-detail">
+                                <blockquote>
+                                    <p>The Only Resource You Will Need To Start a Blog Using WordPress.
+                                    </p>
+                                    <cite>Dieter Rams</cite>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article class="recommend__content">
-                    <div class="recommend__pic">
-                        <a href="">
-                            <img src="./img/400/lamp-400.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="recommend__description">
-                        <div class="recommend__description-summary">
-                            <p class="summary__date">December 15, 2017</p>
-                            <div class="summary__title"></div>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__pic">
+                            <a href="">
+                                <img src="./img/400/jump-400.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="recommend__description-detail">
-                            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
-                                proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
-                                incididunt velit sint in aliqua...</p>
+                        <div class="recommend__description">
+                            <div class="recommend__description-summary">
+                                <p class="summary__date">December 15, 2017</p>
+                                <h1 class="summary__title"><a href="">Create Meaningful Family Moments.</a></h1>
+                            </div>
+                            <div class="recommend__description-detail">
+                                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
+                                    proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
+                                    incididunt velit sint in aliqua...</p>
+                            </div>
+                            <div class="recommend__description-more">
+                                <a href="">Family</a>
+                                <a href="">Relationship</a>
+                            </div>
                         </div>
-                        <div class="recommend__description-more">
-                            <a href="">Design</a>
-                            <a href="">Photography</a>
-                        </div>
-                    </div>
                 </article>
-                <article class="recommend__content">
-                    <div class="recommend__pic">
-                        <a href="">
-                            <img src="./img/400/lamp-400.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="recommend__description">
-                        <div class="recommend__description-summary">
-                            <p class="summary__date">December 15, 2017</p>
-                            <div class="summary__title"></div>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__pic">
+                            <a href="">
+                                <img src="./img/400/beetle-400.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="recommend__description-detail">
-                            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
-                                proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
-                                incididunt velit sint in aliqua...</p>
+                        <div class="recommend__description">
+                            <div class="recommend__description-summary">
+                                <p class="summary__date">December 15, 2017</p>
+                                <h1 class="summary__title"><a href="">Throwback To The Good Old Days.</a></h1>
+                            </div>
+                            <div class="recommend__description-detail">
+                                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
+                                    proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
+                                    incididunt velit sint in aliqua...</p>
+                            </div>
+                            <div class="recommend__description-more">
+                                <a href="">Lifestyle</a>
+                            </div>
                         </div>
-                        <div class="recommend__description-more">
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
                 </article>
-                <article class="recommend__content">
-                    <div class="recommend__pic">
-                        <a href="">
-                            <img src="./img/400/lamp-400.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="recommend__description">
-                        <div class="recommend__description-summary">
-                            <p class="summary__date">December 15, 2017</p>
-                            <div class="summary__title"></div>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__pic">
+                            <a href="">
+                                <img src="./img/400/fuji-400.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="recommend__description-detail">
-                            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
-                                proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
-                                incididunt velit sint in aliqua...</p>
+                        <div class="recommend__description">
+                            <div class="recommend__description-summary">
+                                <p class="summary__date">December 15, 2017</p>
+                                <h1 class="summary__title"><a href="">Just Another Standard Format Post.</a></h1>
+                            </div>
+                            <div class="recommend__description-detail">
+                                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
+                                    proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
+                                    incididunt velit sint in aliqua...</p>
+                            </div>
+                            <div class="recommend__description-more">
+                                <a href="">Design</a>
+                                <a href="">Photography</a>
+                            </div>
                         </div>
-                        <div class="recommend__description-more">
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
                 </article>
-                <article class="recommend__content">
-                    <div class="recommend__pic">
-                        <a href="">
-                            <img src="./img/400/lamp-400.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="recommend__description">
-                        <div class="recommend__description-summary">
-                            <p class="summary__date">December 15, 2017</p>
-                            <div class="summary__title"></div>
+                <article class="masonry-brick recommend__content">
+                    <div class="box-shadow">
+                        <div class="recommend__pic">
+                            <a href="">
+                                <img src="./img/400/sydney-400.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="recommend__description-detail">
-                            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
-                                proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
-                                incididunt velit sint in aliqua...</p>
+                        <div class="recommend__description">
+                            <div class="recommend__description-summary">
+                                <p class="summary__date">December 15, 2017</p>
+                                <h1 class="summary__title"><a href="">Planning Your First Trip to Sydney.</a></h1>
+                            </div>
+                            <div class="recommend__description-detail">
+                                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
+                                    proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
+                                    incididunt velit sint in aliqua...</p>
+                            </div>
+                            <div class="recommend__description-more">
+                                <a href="">Travel</a>
+                                <a href="">Vacation</a>
+                            </div>
                         </div>
-                        <div class="recommend__description-more">
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="recommend__content">
-                    <div class="recommend__pic">
-                        <a href="">
-                            <img src="./img/400/lamp-400.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="recommend__description">
-                        <div class="recommend__description-summary">
-                            <p class="summary__date">December 15, 2017</p>
-                            <div class="summary__title"></div>
-                        </div>
-                        <div class="recommend__description-detail">
-                            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
-                                proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
-                                incididunt velit sint in aliqua...</p>
-                        </div>
-                        <div class="recommend__description-more">
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="recommend__content">
-                    <div class="recommend__pic">
-                        <a href="">
-                            <img src="./img/400/lamp-400.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="recommend__description">
-                        <div class="recommend__description-summary">
-                            <p class="summary__date">December 15, 2017</p>
-                            <div class="summary__title"></div>
-                        </div>
-                        <div class="recommend__description-detail">
-                            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
-                                proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
-                                incididunt velit sint in aliqua...</p>
-                        </div>
-                        <div class="recommend__description-more">
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="recommend__content">
-                    <div class="recommend__pic">
-                        <a href="">
-                            <img src="./img/400/lamp-400.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="recommend__description">
-                        <div class="recommend__description-summary">
-                            <p class="summary__date">December 15, 2017</p>
-                            <div class="summary__title"></div>
-                        </div>
-                        <div class="recommend__description-detail">
-                            <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit
-                                proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute
-                                incididunt velit sint in aliqua...</p>
-                        </div>
-                        <div class="recommend__description-more">
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </div>
                 </article>
             </div>
             <div class="row page"></div>
@@ -367,7 +410,6 @@
         <section class="extra"></section>
     </body>
     <footer>
-
     </footer>
 </body>
 

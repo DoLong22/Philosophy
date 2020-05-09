@@ -5,8 +5,7 @@
     color: aliceblue;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Libre Baskerville', serif;
-    
+    font-family: 'Libre Baskerville', serif;    
 }
 @font-face{
     src:url("../../font/metropolis.medium.otf");
@@ -15,6 +14,10 @@ h1,h2,h3,h4,h5,h6{
 @font-face{
     src:url("../../font/metropolis.extra-light.otf");
     font-family: metropolis-light;
+}
+@font-face{
+    src:url("../../font/metropolis.regular.otf");
+    font-family: metropolis-regular;
 }
 @font-face{
     src:url("../../font/metropolis.semi-bold.otf");
@@ -355,13 +358,111 @@ ul.navbar-list{
     background-color: #f2f2f2;
 }
 .recommend{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
-    column-gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: 1440px;
 }
+.recommend__content{
+    padding: 0px 20px;
+    margin-bottom: 3.5rem;
+    max-width: 360px;
+    height: auto;
+}
+.box-shadow{
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
 
+}
 .recommend__pic a img{
-    max-width: 100%;
+    max-width:320px;
+}
+.recommend__description{
+    padding: 2.5rem 2rem 3rem;
+    background-color: #FFFFFF;
+}
+.summary__date{
+    color: #858585;
 
+    font-family: metropolis-medium;;
+}
+.summary__title{
+    padding-top: 1rem;
+}
+.summary__title a{
+    color: #000000;
+
+    font-size: 24px;
+    text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
+}
+.summary__title a:hover{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.recommend__description-detail{
+    padding-top: 2rem;
+}
+.recommend__description-detail p{
+    color: #656565;
+    font-family: metropolis-regular;
+    line-height: 25px;
+    word-spacing: 3px;
+    font-size: 15px;
+}
+.recommend__description-more{
+    padding-top: 2rem;
+}
+.recommend__description-more a{
+    color: #0054a5;
+
+    font-size: 15px;
+    text-decoration: none;
+    font-family: metropolis-semibold;
+
+    transition: all 0.3s ease-in-out;
+}
+.recommend__description-more a::after{
+    content: ",";
+}
+.recommend__description-more a:hover{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+
+    color: #000000;
+}
+.recommend__description-detail blockquote{
+    position: relative;
+    
+    margin-top: 3rem;
+    
+    text-align: center;
+}
+.recommend__description-detail blockquote::before{
+    content: "";
+    position: absolute;
+    left: 42.5%;
+    top: -15%;
+
+    height: 2.5rem;
+    width: 2.5rem;
+
+    background-image: url('../../img/icon-quote.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #999999;
+    opacity: 0.2;
+}
+.recommend__description-detail blockquote p{
+    color: #000000;
+
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+.recommend__description-detail blockquote cite{
+    color: #999999;
+
+    font-size: 15px;
+    font-family: metropolis-light, serif;
+    line-height: 3rem;
 }
